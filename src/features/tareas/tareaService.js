@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'https://beautiful-moth-loincloth.cyclic.cloud'
+const API_URL = 'http://localhost:5001/api/tareas/'
 
 // crear tarea
 const crearTarea = async (tareaData, token) => {

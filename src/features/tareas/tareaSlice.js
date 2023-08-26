@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import tareaService from './tareaService'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import tareaService from './tareaService';
 
 const initialState = {
   tareas: [],

@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API_URL = 'https://beautiful-moth-loincloth.cyclic.cloud/api/users'
+const API_URL = 'http://localhost:5001/api/users/'
 
 const registrar = async (userData) => {
   const response = await axios.post(API_URL, userData)
@@ -9,7 +9,7 @@ const registrar = async (userData) => {
 
 // hacer login
 const login = async (userData) => {
-  const response = await axios.post(API_URL + '/login', userData)
+  const response = await axios.post(API_URL + 'login', userData)
   if (response.data) {
     localStorage.setItem('user', JSON.stringify(response.data))
   }
